@@ -1,2 +1,1 @@
-# g0rush.github.io
-my website
+# Site with working Jukebox Demo
