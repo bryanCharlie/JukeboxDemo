@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no" />
+    <link rel="stylesheet" href="../css/jukebox.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <title>JukeBox</title>
+</head>
+
+<body>
+    <section id="search-content">
+    <div class="container">
+    <div class="row">
+        <div class="search-box">
+            <form action="">
+                <div class="song-container">
+                    <input type="text" id="song-input">
+                </div>
+                <div class="search-container">
+                    <input type="submit" id="search" value="">
+                </div>
+                <input type="file" id="input-song">
+            </form>
+            <div class="img-container">
+                <img src="" alt="" id="song-img">
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="content">
+        <div class="song-list">
+            <ul id="list">
+            </ul>
+        </div>
+        <div class="audio-container">
+        </div>
+        <div class="functions">
+            <div id="back">
+            </div>
+            <div id="pause">
+            </div>
+            <div id="forward">
+            </div>
+        </div>
+        <div class="chat">
+            <ul id="messages"><li>If you type <b>play</b> followed by <b>songname</b> the song plays</li></ul>
+            <form action="">
+                <input id="m" autocomplete="off" placeholder="Enter a message" />
+                <input type="text" name="" id="username" placeholder="Enter your username">
+                <button>Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

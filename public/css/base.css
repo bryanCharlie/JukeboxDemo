@@ -1,0 +1,148 @@
+.nowrap {
+    white-space: nowrap;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F8F8;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-nav > li {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/*Introduction section*/
+
+section#intro-header {
+    background: url('../imgs/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+section#intro-header .wrap-headline {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+section#intro-header h1,
+section#intro-header h2 {
+    color: #FFF;
+}
+
+section#intro-header h2 {
+    font-size: 1.5rem;
+}
+
+section#intro-header hr {
+    width: 10%;
+}
+
+section#intro-header .btn-default {
+    background-color: rgba(255, 255, 25+5, 0.5);
+    border: none;
+}
+
+
+/* Projects section */
+
+section#projects {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    border-bottom: 2px solid;
+    background-color: #F8F8F8;
+}
+
+section#projects h2 {
+    margin-bottom: 10rem;
+}
+
+
+/* about me section */
+
+section#about-me {
+    border-bottom: 2px solid;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+section#about-me figure {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+section#about-me h3 {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+section#about-me h4 {
+    margin-bottom: 5rem;
+}
+
+section#about-me p {
+    line-height: 175%;
+}
+
+
+/* contact section */
+
+section#contact {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+section#contact h2 {
+    margin-bottom: 15rem;
+}
+
+@media {
+    table .btn {
+        font-size: 0.75rem;
+        font-size: 3.5vw;
+    }
+}
+
+    /* fix for the ipad */
+@media (min-device-width : 768px) and (max-device-width : 1024px)  { 
+    #home {
+        background-attachment: scroll;
+        /* default height landscape*/
+        height: 768px;
+    }
+}
+/* fix for the ipad */
+@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+    #home {
+        /* default height landscape*/
+        height: 1024px;
+    }
+} 
+
+/* fix for the iphone */
+@media (min-device-width : 320px) and (max-device-width : 568px)  { 
+    #home {
+        background-attachment: scroll;
+        /* default height landscape*/
+        height: 320px;
+    }
+}
+/* fix for the iphone */
+@media (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) {
+    #home {
+        /* default height landscape*/
+        height: 568px;
+    }
+}
